@@ -6,55 +6,58 @@
   <title>The Lotus Opportunity Foundation</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #FAFAF7;
-      font-family: "Times New Roman", serif;
-      color: #1d2951; /* Navy */
-      text-align: center;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
+      margin: 40px;
+      color: #1d2951; /* your chosen font color */
+      background-color: #f9f9f9;
     }
+
     h1 {
+      text-align: center;
       font-size: 2rem;
-      font-weight: bold;
-      letter-spacing: 2px;
       margin-bottom: 20px;
     }
+
     p {
-      max-width: 700px;
-      font-size: 1.1rem;
-      color: #1d2951;
-      margin-bottom: 20px;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      font-size: 1rem;
+      text-align: justify;
     }
+
+    .contact {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
     footer {
-      margin-top: 30px;
+      text-align: center;
       font-size: 0.9rem;
-      color: #33537e;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <h1>The Lotus Opportunity Foundation</h1>
-  
+
   <p>
-    The Lotus Opportunity Foundation empowers communities by providing hands-on education, mentorship,
-    and access to emerging tools in technology and creative innovation — creating real pathways for the
+    The Lotus Opportunity Foundation empowers communities by providing hands-on education, mentorship, 
+    and access to emerging tools in technology and creative innovation — creating real pathways for the 
     next generation of creators, leaders, and skilled professionals.
-     <p>
-    📩 Contact us: hello@thelotusopportunity.org
-  </p> 
+  </p>
+
+  <p class="contact">📩 Contact us: hello@thelotusopportunity.org</p>
 
   <footer>
     © <span id="year"></span> The Lotus Opportunity Foundation
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // auto-update the year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
