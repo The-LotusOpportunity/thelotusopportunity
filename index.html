@@ -1,27 +1,58 @@
-export default function LotusLanding() {
-  return (
-    <div className="min-h-screen bg-[#FAFAF7] text-[#0A2F5A] flex flex-col items-center justify-center px-6 py-16">
-      {/* Logo */}
-      <div className="flex justify-center mb-8">
-        <img
-          src="/mnt/data/F182E811-68CE-4C9D-8EA0-F782CCE1930A.jpeg"
-          alt="The Lotus Opportunity Foundation logo"
-          className="h-28 w-auto object-contain"
-        />
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lotus Opportunity Foundation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #FAFAF7;
+      font-family: "Times New Roman", serif;
+      color: #0A2F5A; /* Navy */
+      text-align: center;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    p {
+      max-width: 700px;
+      font-size: 1.1rem;
+      color: #1c3f6a;
+      margin-bottom: 20px;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #33537e;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Lotus Opportunity Foundation</h1>
+  
+  <p>
+    The Lotus Opportunity Foundation empowers communities by providing hands-on education, mentorship,
+    and access to emerging tools in technology and creative innovation — creating real pathways for the
+    next generation of creators, leaders, and skilled professionals.
+  </p>
 
-      {/* Mission-only section */}
-      <main className="max-w-3xl text-center">
-        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Our mission</h1>
-        <p className="mt-5 text-lg leading-relaxed text-[#1c3f6a]">
-          The Lotus Opportunity Foundation empowers communities by providing hands-on education, mentorship, and access to emerging tools in technology and creative innovation — creating real pathways for the next generation of creators, leaders, and skilled professionals.
-        </p>
-      </main>
+  <footer>
+    © <span id="year"></span> The Lotus Opportunity Foundation
+  </footer>
 
-      {/* Footer */}
-      <footer className="mt-16 text-sm text-[#33537e]">
-        <p>© {new Date().getFullYear()} Lotus Opportunity Foundation</p>
-      </footer>
-    </div>
-  );
-}
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
